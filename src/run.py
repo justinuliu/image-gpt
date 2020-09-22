@@ -22,10 +22,10 @@ def parse_arguments():
     parser = argparse.ArgumentParser()
 
     # data and I/O
-    parser.add_argument("--data_path", type=str, default="/root/downloads/imagenet")
-    parser.add_argument("--ckpt_path", type=str, default="/root/downloads/model.ckpt-1000000")
-    parser.add_argument("--color_cluster_path", type=str, default="/root/downloads/kmeans_centers.npy")
-    parser.add_argument("--save_dir", type=str, default="/root/save/")
+    parser.add_argument("--data_path", type=str, default="downloads/imagenet")
+    parser.add_argument("--ckpt_path", type=str, default="downloads/model.ckpt-1000000")
+    parser.add_argument("--color_cluster_path", type=str, default="downloads/kmeans_centers.npy")
+    parser.add_argument("--save_dir", type=str, default="save/")
 
     # model
     parser.add_argument("--n_embd", type=int, default=512)

@@ -8,7 +8,7 @@ from tqdm import tqdm
 def parse_arguments():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("--download_dir", type=str, default="/root/downloads/")
+    parser.add_argument("--download_dir", type=str, default="downloads/")
 
     parser.add_argument("--model", type=str, choices=["s", "m", "l"], help="parameter counts are s:76M, m:455M, l:1362M")
     parser.add_argument("--ckpt", type=str, choices=["131000", "262000", "524000", "1000000"])
